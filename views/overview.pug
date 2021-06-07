@@ -1,0 +1,13 @@
+extends base
+
+block content
+  main.main    
+    h1.heading-secondary Humanos
+      each human in humans
+        div.human
+          p.info ID: #{human._id}
+          p.info Name: #{human.name}
+          p.info Age: #{human.age}
+
+
+          
